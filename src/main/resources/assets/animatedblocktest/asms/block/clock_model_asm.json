@@ -1,0 +1,18 @@
+{
+
+  "parameters":{
+    "hour_ang": [ "*+*+", 0,"#time",-2,-0.5],
+    "min_ang": [ "*+*+", 0,"#time",-120,-0.5]
+  },
+  "clips":{
+    "default": "animatedblocktest:block/clock_model@default",
+    "moving": ["apply", "animatedblocktest:block/clock_model@moving", "#hour_ang"]
+    //"moving":[ "slerp", "animatedblocktest:block/clock_model@moving", "animatedblocktest:block/clock_model@moving_minutes", "#hour_ang", "#min_ang" ]
+  },
+  "states":["default", "moving"],
+  "transitions": {
+    "default": "moving",
+    "moving": "default"
+  },
+  "start_state": "default"
+}

@@ -1,0 +1,37 @@
+{
+  "joints": {
+    "group1": { "0": [1.0], "1": [1.0] }
+  },
+  "clips": {
+    "default": {
+      "loop": false,
+      // DO not loop
+      "joint_clips": {},
+      // No change to the model
+      "events": {}
+      // No events
+    },
+    "moving": {
+      "loop": true,
+      "joint_clips": {
+        "group1":[
+          {
+            "variable": "axis_y",
+            "type": "uniform",
+            "interpolation": "nearest",
+            "samples": [ 1 ]
+          },
+          {
+            "variable": "angle",
+            "type": "uniform",
+            "interpolation": "linear",
+            "samples": [
+              0, 120, 240
+            ]
+          }
+        ]
+      },
+      "events": {}
+    }
+  }
+}

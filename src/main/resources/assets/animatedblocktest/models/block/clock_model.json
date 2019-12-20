@@ -1,0 +1,36 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"1": "blocks/log_oak_top",
+		"2": "blocks/log_oak",
+		"3": "blocks/anvil_base"
+	},
+	"elements": [
+		{
+			"name": "hours",
+			"from": [7.5, 7, 8],
+			"to": [8.5, 11, 9],
+			"faces": {
+				"north": {"uv": [0, 0, 1, 4], "texture": "#3"},
+				"east": {"uv": [0, 0, 1, 4], "texture": "#3"},
+				"south": {"uv": [0, 0, 1, 4], "texture": "#3"},
+				"west": {"uv": [0, 0, 1, 4], "texture": "#3"},
+				"up": {"uv": [0, 0, 1, 4], "texture": "#3"},
+				"down": {"uv": [0, 0, 1, 4], "texture": "#3"}
+			}
+		},
+		{
+			"name": "minutes",
+			"from": [7.5, 7, 9],
+			"to": [8.5, 14, 10],
+			"faces": {
+				"north": {"uv": [0, 0, 1, 7], "texture": "#3"},
+				"east": {"uv": [0, 0, 1, 7], "texture": "#3"},
+				"south": {"uv": [0, 0, 1, 7], "texture": "#3"},
+				"west": {"uv": [0, 0, 1, 7], "texture": "#3"},
+				"up": {"uv": [0, 0, 1, 7], "texture": "#3"},
+				"down": {"uv": [0, 0, 1, 7], "texture": "#3"}
+			}
+		}
+	]
+}

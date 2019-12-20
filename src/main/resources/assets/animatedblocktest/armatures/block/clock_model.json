@@ -1,0 +1,79 @@
+{
+  "joints": {
+    "hours": { "0": [1.0]},
+    "minutes":{"1":[1.0]}
+  },
+  "clips": {
+    "default": {
+      "loop": false,
+      // DO not loop
+      "joint_clips": {},
+      // No change to the model
+      "events": {}
+      // No events
+    },
+    "moving": {
+      "loop": true,
+      "joint_clips": {
+        "hours":[
+          {
+            "variable": "axis_z",
+            "type": "uniform",
+            "interpolation": "nearest",
+            "samples": [ 1 ]
+          },
+          {
+            "variable": "angle",
+            "type": "uniform",
+            "interpolation": "linear",
+            "samples": [
+              0, 180
+            ]
+          }
+        ],
+        "minutes":[
+          {
+            "variable": "axis_z",
+            "type": "uniform",
+            "interpolation": "nearest",
+            "samples": [ 1 ]
+          },
+          {
+            "variable": "angle",
+            "type": "uniform",
+            "interpolation": "linear",
+            "samples": [
+              0, 180, 0, 180, 0, 180, 0, 180, 0, 180, 0, 180,
+              0, 180, 0, 180, 0, 180, 0, 180, 0, 180, 0, 180
+            ]
+          }
+        ]
+
+      },
+      "events": {}
+    },
+    "moving_minutes": {
+      "loop": true,
+      "joint_clips": {
+        "minutes":[
+          {
+            "variable": "axis_z",
+            "type": "uniform",
+            "interpolation": "nearest",
+            "samples": [ 1 ]
+          },
+          {
+            "variable": "angle",
+            "type": "uniform",
+            "interpolation": "linear",
+            "samples": [
+              0, 180
+            ]
+          }
+        ]
+
+      },
+      "events": {}
+    }
+  }
+}

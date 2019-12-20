@@ -1,0 +1,16 @@
+{
+
+  "parameters":{
+    "speed": [ "*","#rot_speed"  ]
+  },
+  "clips":{
+    "default": "animatedblocktest:block/animatedblock@default", // Just a reference to the clip in the armature file.
+    "moving": ["apply", "animatedblocktest:block/animatedblock@moving", "#speed"] // Applies the slowed_anim_time to the moving clip in the armature file.
+  },
+  "states":["default", "moving"],
+  "transitions": {
+    "default": "moving", // default state will be able to transition to moving
+    "moving": "default" // mocing state will be able to transition to default state
+  },
+  "start_state": "default" // The ASM will start in the moving state
+}
